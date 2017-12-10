@@ -2,7 +2,7 @@
 .DS_Store
 
 #Eclipse
-settings/
+.settings/
 .buildpath
 .project
 
