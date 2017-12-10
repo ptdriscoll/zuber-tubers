@@ -1,0 +1,654 @@
+@CHARSET "ISO-8859-1";
+
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+
+
+/*-------------------------BOOTSTRAP NARROW STYLES-------------------------*/
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------------------------*/
+/*-------------------------CUSTOM STYLES FOR ZUBER TUBERS-------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+html, body {
+	height: 100.1%;
+}
+
+body {
+	font: 14px/1.4 "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background: #f9efbd;
+	color: #1D0052;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+.main.container {	
+	background: #fff200;
+	margin: 0 auto;
+}
+
+#header {
+	max-width: 987px;
+	height: 80px;
+	background: url("../images/Meet_the_ZuberTubers.jpg") no-repeat 47% 53%;
+	background-size: cover;
+	border: 1px solid #e4c002;
+	margin-botton: 0;
+}
+
+.spanish #header {	
+	max-width: 987px;
+	height: 80px;
+	background: url("../images/Meet_the_ZuberTubers_espanol.jpg") no-repeat 40% 60%;
+	background-size: cover;
+	border: 1px solid #e4c002;
+	margin-botton: 0;
+}
+
+.navbar {
+	margin: 0;
+	text-align: center;
+	min-height: 0px;
+	border-radius: 0;
+}
+
+.navbar-inverse {    
+	background: none;
+    background-color: #ffb243;
+    border: none;
+    background-image: linear-gradient(to bottom,#ffb147 0,#ffb243 100%);
+    background-image: linear-gradient(to bottom,#ffb147 0,#fdad39 100%);
+    background-image: linear-gradient(to bottom,#fab85f 0,#fdad39 100%);
+    background-image: linear-gradient(to bottom,#fdad39 0,#fba72d 100%);
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    margin: 4px 0 5px;
+}
+
+.nav>li {
+    display: inline-block;
+}
+	
+.navbar-nav>li>a {
+    padding: 0 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	font-weight: bold;
+	color: #d552c0;
+	color: #fff200;
+	text-shadow: none;
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.open>a {
+	background: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+	color: #fdf7fc;
+	background: none;
+}
+
+.content.container {
+	border: 1px solid #e4c002;
+}
+
+.content.container.about {
+	padding-bottom: 4px;
+}
+
+.container, .header, .marketing, .footer, #you_tube_videos {
+	padding: 0;	
+}
+
+.marketing {
+	margin: 20px 0 0;
+}
+
+.characters {
+	float: left;
+	width: 31%;
+	height: auto;
+	font-size: 12px;
+}
+
+.characters.middle {
+	margin: 0 3%; 
+}
+
+.characters img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 8px;
+	border: 6px solid #ffb243;
+}
+
+.characters p span {
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: bold;
+    color: #ef4136;
+}
+
+#introtext {
+	clear: both;
+}
+
+#introtext .lastparagraph{
+	margin-bottom: 10px;
+}
+
+#sugarbaddie, #cupcakes {
+	display: none;
+}
+
+#cupcakes_sugarbaddie_mobile {
+	text-align: center;
+	margin-bottom: 3px;
+}
+
+#cupcakes_sugarbaddie_mobile img {
+	margin: 0 10px;
+	display: inline-block;
+}
+
+#sugarbaddie_mobile {
+	width: 100px;
+	height: auto;
+}
+
+#cupcakes_mobile {
+	width: 84px;
+	height: auto;
+}
+
+#you_tube_videos a.btn_video {
+	border: 6px solid #f37425;
+}
+
+#you_tube_videos .add_bottom_margin {
+	margin-bottom: 15px;
+}
+
+#you_tube_videos a.title_video h4 {
+	margin-top: 5px;
+	font-size: 16px;
+	font-weight: bold;
+    color: #f37425;;
+}
+
+#you_tube_videos a.title_video:hover {
+	text-decoration: none;
+}
+
+#you_tube_videos a.title_video:hover h4 {
+	color: #c138b3;
+}
+
+footer, .footer, #copyright {
+	text-align: center;
+	padding-top: 10px;
+	border: none;
+}
+
+footer img {
+	margin: 25px 20px 20px;
+}
+
+#copyright {
+	margin: 15px 0 6px;
+}
+
+#healthykidshead {
+	margin: 25px auto 15px;
+}
+
+#mayorendorsement {
+	display: block;
+	margin: 0 auto 15px;
+}
+
+#contact_us {
+	padding: 10px 0;
+}
+
+#contact_us .last_name {
+	display: none;
+}
+
+#contact_us label {
+	display: block;
+	margin: 15px 0 0;
+}
+
+#contact_us input, #contact_us textarea {
+	display: block;
+	border: 5px solid #fcaa32;
+	background: #faf8f0;
+	padding: 4px 7px 4px;
+}
+
+#contact_us input:focus, #contact_us textarea:focus {
+    outline: none !important;
+    border: 5px solid #ef7431;
+}
+
+#contact_us .input {
+	width: 100%;
+	max-width: 300px;
+}
+
+#contact_us textarea {
+	width: 100%;
+}
+
+#contact_us #submit {
+	margin: 20px 0;
+	background: #ffa541;
+	padding: 5px 15px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+#contact_us #submit:focus {
+	background: #ef7431;
+}
+
+#error_message {
+	margin-top: 15px;
+	padding-left: 20px;
+	color: #ef7431;
+	font-weight: bold;
+}
+
+.contact .result {
+	color: #ef7431;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.contact .result.first {
+	margin-top: 20px;
+}
+
+.contact .result.first.last, .contact .result.last  {
+	margin-bottom: 25px;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*-------------------------CUSTOM MEDIA AND FX FOR ZUBER TUBERS-------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+.embed_wrapper {     
+	position: relative;
+	height: 0;
+	overflow: hidden;   
+}
+
+.ratio_16-9 { padding-bottom: 56.25%; } /* 9/16*100 */
+.ratio_4-3 { padding-bottom: 75%; } /* 3/4*100 */
+.ratio_1-1 { padding-bottom: 100%; } /* ... */  
+.background-black { background-color: #000; }
+.embed_wrapper iframe, .embed_wrapper img { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+}
+
+a.btn_video { 
+	position: relative; 
+	display: inline-block; 
+	width: 100%; 
+}
+a.btn_video:before {
+    position: absolute;
+    text-align: center;  
+    content: '';
+    background-image: url('../images/video-play.png');
+    width: 55px;
+    height: 55px;                         
+    top: 50%;
+    left: 50%;                            
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 10;
+}
+a.btn_video:hover:before { background-position: 0 55px; }
+
+.shadow, #you_tube_videos .btn_video {
+	box-shadow: 2px 2px 17px rgba(195, 164, 2, .45);
+}
+.lightershadow {
+	box-shadow: 2px -1px 5px rgba(249, 174, 55, 1);
+}
+
+#previewVideo .shadow {
+	box-shadow: 0px 1px 10px #ccc;
+}
+
+a:hover img { opacity: 0.8; }
+a:hover { cursor:pointer; }
+
+#push_footer_wrapper {
+  min-height: 100%;
+  margin: 0 auto -45px; /* height of copyright element plus its margin-top */
+}
+#push_footer {
+  height: 45px; /* height of copyright element plus its margin-top */
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*-------------------------CUSTOM MEDIA QUERIES FOR ZUBER TUBERS-------------------------*/
+/*---------------------------------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+	#you_tube_videos .col-xs-6 {
+	    width: 100%;
+	}
+}
+
+@media (min-width: 340px) {
+	#header, .spanish #header  {
+		height: 85px;
+	}
+}
+
+@media (min-width: 360px) {
+	#header, .spanish #header  {
+		height: 90px;
+	}
+}
+
+@media (min-width: 380px) {
+	#header, .spanish #header  {
+		height: 95px;
+	}
+}
+
+@media (min-width: 400px) {
+	#header, .spanish #header  {
+		height: 100px;
+	}
+}
+
+@media (min-width: 430px) {
+	#header, .spanish #header  {
+		height: 105px;
+	}
+	
+	#cupcakes_sugarbaddie_mobile img {
+		margin: 0 15px;
+	}
+	
+	#sugarbaddie_mobile {
+		width: 125px;
+		height: auto;
+	}
+	
+	#cupcakes_mobile {
+		width: 105px;
+		height: auto;
+	}
+}
+
+@media (min-width: 460px) {
+	#header, .spanish #header  {
+		height: 115px;
+	}
+}
+
+@media (min-width: 500px) {
+	#header, .spanish #header  {
+		height: 125px;
+	}
+	#healthykidshead {
+		margin-top: 20px;
+	}
+	#mayorendorsement {
+		float: right;
+		margin: 0 -12px 5px 5px;
+	}
+}
+
+@media (min-width: 540px) {
+	#header, .spanish #header  {
+		height: 135px;
+	}
+}
+
+@media (min-width: 600px) {
+	#header, .spanish #header  {
+		height: 150px;
+	}
+	
+	#cupcakes_sugarbaddie_mobile img {
+		margin: 0 25px;
+	}
+	
+	#sugarbaddie_mobile {
+		width: 183px;
+		height: auto;
+	}
+	
+	#cupcakes_mobile {
+		width: 125px;
+		height: auto;
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 16px;
+	}	
+	
+	.spanish #healthykidstext {
+		font-size: 15.7px;
+	} 
+	
+	p {
+		margin-bottom: 20px;
+	}
+
+	.container {
+		max-width: 987px;
+	}	
+	
+	#header, .spanish #header  {
+		margin-bottom: 0;
+	}
+	
+	.navbar-nav>li>a {
+    	padding: 1px 35px 0;
+	}
+	
+	.content.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	.marketing {
+		margin: 25px 0 0;
+	}
+	
+	.characters img {
+		margin-bottom: 12px;
+		border: 8px solid #ffb243;
+	}
+	
+	.characters {
+		font-size: 14px;
+	}
+	
+	.characters p span {
+	    font-size: 21px;
+	    line-height: 22px;
+	}
+	
+	#introtext {
+		margin-top: -3px;
+	}
+	
+	#introtext .lastparagraph{
+		margin-bottom: 8px;
+	}	
+}
+
+@media (min-width: 788px) {
+	body {
+		padding-top: 20px;
+	}
+}
+
+@media (min-width: 992px) {
+	#cupcakes_sugarbaddie_mobile {
+		display: none;		
+	}
+	
+	#sugarbaddie, #cupcakes {
+		display: inline-block;		
+		float: right;
+	}
+	
+	#sugarbaddie {
+		margin-right: -15px;
+	}
+	
+	#cupcakes {
+		clear: both;
+		margin-left: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

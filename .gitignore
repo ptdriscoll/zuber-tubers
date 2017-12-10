@@ -1,0 +1,10 @@
+#Mac
+.DS_Store
+
+#Eclipse
+settings/
+.buildpath
+.project
+
+#other
+test.php
