@@ -17,6 +17,7 @@ function displayYouTubeVideosColSizes(data) {
 function displayYouTubeVideos(data, col) {
   //console.log(data);
   //console.log(col);  
+  if (!data.items) return;  
   var target = document.getElementById('you_tube_videos');
   var col = col || {},
       xs = col.xs || '6',
@@ -26,9 +27,13 @@ function displayYouTubeVideos(data, col) {
   var i, length = data.items.length;
   var thePlayer, listID, title, thumbnail, description,
       totalSeconds, seconds, minutes, time;
+  var titleFilterEnglish = 'Healthy Kids Project | ',
+      titleFilterSpanish = 'El Proyecto Niños Sanos | ';
   var output = '';
   for (i = 0; i < length; i++) {
     title = data.items[i].snippet.title;
+    title = title.replace(titleFilterEnglish, '');
+    title = title.replace(titleFilterSpanish, '');
     thumbnail = data.items[i].snippet.thumbnails.high.url;
     description = data.items[i].snippet.description;
     videoID = data.items[i].snippet.resourceId.videoId;
