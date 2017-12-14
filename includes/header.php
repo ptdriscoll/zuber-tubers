@@ -1,8 +1,12 @@
-<?php 
-
+<?php
 //get root folder so assets and images links work on all pages
 $protocol = strpos($_SERVER['SERVER_SIGNATURE'], '443') !== false ? 'https://' : 'http://';
-$root = $protocol . $_SERVER['HTTP_HOST'] . '/zubertubers/';
+$root = $protocol . $_SERVER['HTTP_HOST'].'/zubertubers/';
+
+//get root includes folder in file system, which is different between localhost and live servers 
+$doc_root = $_SERVER['DOCUMENT_ROOT'];
+if ($root === 'http://localhost/zubertubers/') $doc_includes = $doc_root.'/zubertubers/includes/';
+else $doc_includes = $doc_root.'/includes/';
 
 //get page path to synch pages when switching from English to Spanish and back
 $uri = $_SERVER['REQUEST_URI'];
@@ -54,16 +58,7 @@ else {
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-6581281-6', 'auto');
-  ga('send', 'pageview');
-
-</script>
+<?php if (file_exists($doc_includes.'googleAnalytics.php')) include 'googleAnalytics.php'; ?>
 
 </head>
 
